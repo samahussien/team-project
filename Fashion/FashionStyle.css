@@ -1,0 +1,392 @@
+
+#back{
+  background-image: url("bbackk.jpg");
+  
+  background-repeat:no-repeat ;
+ 
+  
+  background-size: 680px;;
+  
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0%;
+  background-color: #e61d72;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  left:0;
+  text-decoration: none;
+  font-size: 25px;
+  color: #adadad;
+  display: block;
+  transition: 0.3s;
+  padding: 5% 5% 5% 32px;
+  font-family: Forte;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn1 {
+  position: relative;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  margin-left: 200px;
+  padding: 0px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  
+}
+
+button {
+  background-color: white;
+  color: pink;
+  top: 14px;
+  padding: 14px 14px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: Forte;
+  height: 33px;
+}
+
+button:hover {
+  opacity: 0.8;
+  
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: red;
+  font-family: Forte;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+.a{
+  
+  text-decoration: none;
+  font-family: Forte;
+  color:pink;
+  font-size: 50px;
+  margin: 0px;
+  padding: 0px;
+  
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px #E61B72;
+  padding: 12px 16px;
+  z-index: 1;
+  text-transform: capitalize;
+  color: #E61B72;
+  font-size: 20px;
+  font-family: Forte;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#login {
+  position: absolute;
+  color: #e61d73;
+  font-family: Forte;
+  font-size: 20px;
+  right: 2%;
+  text-decoration: none;
+  width: 10%;
+  padding: 5px 5px;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 10px;
+  left: 16px;
+}
+
+.background {
+  background-color:rgba(11, 235, 235, 0.733);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-family: Forte;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 45px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay1 {
+  height: 0%;
+  width: 100%;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay1-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-family: Forte;
+}
+
+.overlay1 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay1 a:hover, .overlay1 a:focus {
+  color: #f1f1f1;
+}
+
+.overlay1 .closebtn1 {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay2 {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay2-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-family: Forte;
+}
+
+.overlay2 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay2 a:hover, .overlay2 a:focus {
+  color: #f1f1f1;
+}
+
+.overlay2 .closebtn2 {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.column1 {
+  float: right;
+  width: 50%;
+  padding: 22px;
+  height: 5%;
+  
+}
+.column3 {
+  float: left;
+  width: 50%;
+  padding: 22px;
+  height: 5%;
+}
+
+footer {
+  color: white;
+  background-color: #e61d72;
+}
+footer a {
+  text-decoration:none;
+  color:white;
+  font-size:30px; 
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 250px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  height: 50px;
+}
+
+@media screen and (max-width:600px){
+  .column .side ,.column.middle {
+    width: 100%;
+  }
+}

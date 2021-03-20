@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description"content="Everything a woman needs in the world of fashion">
+        <meta name="keywords" content="Fashion">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="refresh" content="10min">
+        <title>Fashion</title>
+        <link rel = "icon" href ="logo.png" type = "image/x-icon"> 
+        <link rel="stylesheet" type="text/css" href="FashionStyle.css">
+        
+    </head>
+    <body>
+      <header style="background-color:#E61B72;padding: 10px; " >
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn1" onclick="closeNav11()">&times;</a>
+            <a href="file:///F:/Fashion/Fashion.html"><i class="fa fa-home"></i> Home</a><br/>
+            <a href="#search"><i class="fa fa-search"></i> Search</a><br/>
+            <a href="#"><i class="fa fa-envelope"></i> Message</a><br/> 
+            <a href="#"><i class="fa fa-globe"></i> Globe</a><br/>
+            <a href="#services"><i class="fa fa-wrench"></i> Services</a><br/>
+            <a href="#contact"><i class="fa fa-envelope"></i> Contact</a><br/>
+          </div>
+          
+              <div class="dropdown">
+                  <a href="#"class="a"style="font-size:30px; cursor:pointer; font-family: Forte; color: white;"
+                   onclick="openNav11()">&#9776;    Fashion</a> 
+                  <div class="dropdown-content">
+                      <p>
+                          Welcome to the fashion world.
+                      </p>
+                  </div>
+              </div>
+
+        <script>
+        function openNav11() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav11() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+    
+        </script>
+       
+        
+        <button onclick="document.getElementById('id01').style.display='block'" id="login">Login</button>
+
+        <div id="id01" class="modal">
+          
+          <form class="modal-content animate" action="/action_page.php" method="post" style="background-color: white;">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="logo.png" alt="Avatar" class="avatar">
+            </div>
+        
+            <div class="container">
+              <label for="uname" style="color: #E61B72; font-size: 20px;"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" id="uname" required style="border: 2px solid #e61b72; border-radius: 10px;">
+        
+              <label for="psw" style="color: #E61B72; font-size: 20px;" ><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" id="psw" required style="border: 2px solid #e61b72; border-radius: 10px;">
+              <label for="remember" style="color: #E61B72;">
+                <input type="checkbox" checked="checked" name="remember" id="remember" > Remember me
+              </label>  <br>              
+              <button type="submit" style="font-size: 25px; color:#E61B72; height: auto;  width: auto; margin-left: 47%;">Login</button>
+
+            </div>
+        
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        
+        <script>
+        var modal = document.getElementById('id01');
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+
+      </header><br/>
+        
+     <div style="position: relative;">
+        <div class="background">
+          <div id="myNav" class="overlay"> 
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="file:///F:/fci/web%20prog..%20marwa%20fikry/fady/my-project-main/Fashion/women.html">Outfits</a>
+            <a href="#">Wedding Dresses</a>
+            <a href="#">Dresses</a>
+            <a href="#">Shirts</a>
+            <a href="#">Pants</a>
+            <a href="#"></a>
+          </div>
+        </div>
+          <div id="divtest">
+
+            <span style="font-size:30px;cursor:pointer; font-family: Forte; position: absolute;
+            top: 8px; right: 2%; color: white; " onclick="openNav()" > <img src="women.gif" width="450px" height="350px"> </span>
+
+          </div>
+     
+ 
+        
+        <script>
+        function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+        </script>
+        <div id="myNav1" class="overlay1">
+          <a href="javascript:void(0)" class="closebtn1" onclick="closeNav1()">&times;</a>
+          <div class="overlay1-content">
+            <a href="file:///F:/fci/web%20prog..%20marwa%20fikry/fady/my-project-main/Fashion/men.html">Suits</a>
+            <a href="#">Shirts</a>
+            <a href="#">Pans</a>
+            <a href="#">T-shirts</a>
+          </div>
+        </div>
+        <div id="divtest">
+          <span style="font-size:30px;cursor:pointer; font-family: Forte; position: absolute;
+          top: 8px; left: 2%; color: white;" onclick="openNav1()"><img src="man.gif" width="450px" height="350px"></span>
+          </div>
+        <script>
+        function openNav1() {
+          document.getElementById("myNav1").style.height = "100%";
+        }
+        
+        function closeNav1() {
+          document.getElementById("myNav1").style.height = "0%";
+        }
+        </script>
+
+        <div id="myNav2" class="overlay2">
+          <a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()">&times;</a>
+          <div class="overlay2-content">
+            <a href="file:///F:/fci/web%20prog..%20marwa%20fikry/fady/my-project-main/Fashion/kids.html">Outfits</a>
+            <a href="#">Shirts</a>
+            <a href="#">Pans</a>
+            <a href="#skirts">SKirts</a>
+          </div>
+        </div>
+          <div id="divtest">
+          <span style="font-size:30px; cursor:pointer; font-family: Forte; position: absolute;
+          top: 8px; left:35%; text-align: center; color: white;" onclick="openNav2()"><img src="kid.gif" width="450px" height="350px"></span>
+          </div>
+        <script>
+        function openNav2() {
+          document.getElementById("myNav2").style.height = "100%";
+        }
+
+        function closeNav2() {
+          document.getElementById("myNav2").style.height = "0%";
+        }
+        </script>
+        
+
+          
+        </div></div>
+       <div style="position:relative ; top: 400px;">
+       
+        <div class="row">
+ 
+          <div id="back" class="column1" style="padding: 100px 0; height: 800px; margin: 0px;">
+            <p style="text-transform: uppercase; box-sizing: content-box; border: 5px dotted #905ba3;
+            border-radius: 100px; border-inline: 1px;  font-family:forte ; color: #e865ab; font-size: 50px; text-align: center; position: absolute; top: 80px; right: 340px; width: 150px; ">New</p>
+            <p style="font-size: 50px; font-family: forte; position: absolute; top: 200px; right: 270px; "> Hijab Dress.</p>
+            <p style="font-size: 30px; font-family: forte; position: absolute; top: 330px; right: 170px; ">Hijab dress for engagement and events.</p>
+            <img src="arrow.gif" width="200px" height="100px" style="position: absolute; top: 420px; right: 300px;">
+          </div>
+          <div class="column1">
+            <img src="dd.jpg" alt="Blue Dress" title="Hijab Dress" width="90%" height="80%">
+            
+          </div>
+        </div>
+      </div> 
+         
+        <footer style="position:relative;top: 350px;">
+        
+        <div class="row">
+          <div class="column">
+            <b><p style="font-size: 30px;">About Fashion</p></b>
+            <a href="#">About Us</a><br/>
+            <a href="#">Fashion Store</a><br/>
+            <a href="#">Legal</a><br/>
+          </div>
+          <div class="column" style="padding-top: 20px;">
+             <b><p style="font-size: 30px;">Account</p></b>
+             <a href="#">My Account</a><br/>
+             <a href="#">Create Account</a><br/>
+          </div>
+        </div>
+        <hr color="white" width="80%">
+        <div class="row">
+          <div class="column2">
+            <a href="#" style="font-size: 50px; font-family: Forte;">Fashion</a>
+          </div>
+          <div class="column2" style="padding-top: 30px;">
+             <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" height="250%" width="5%"></a>
+              <a href="https://twitter.com" target="_blank"><img src="twitter.png" height="250%" width="5%"></a>
+              <a href="https://www.instagram.com" target="_blank"><img src="instagram.png" height="250%" width="5%"></a>
+          </div>
+        </div>
+        <br/>Copyright &copy;2020 <br/>
+        </footer>
+    </body>
+</html>
+

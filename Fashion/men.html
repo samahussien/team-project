@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" 
+        content="Everything a woman needs in the world of fashion">
+        <meta name="keywords" content="Fashion">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="refresh" content="10min">
+        <title>Fashion-Men</title>
+        <link rel = "icon" href ="logo.png" type = "image/x-icon"> 
+        <link rel="stylesheet" type="text/css" href="FashionStyle.css">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        body {
+            font-family: Forte;
+        }
+        
+        * {box-sizing: border-box}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+
+        .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        left: 20%;
+        }
+
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        }
+
+        .next {
+        right: 50%;
+        border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        }
+
+        .text {
+        color: black;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        
+        }
+
+        .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+
+        .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+        background-color: #717171;
+        }
+
+        .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+                
+    </style>
+    </head>
+    <body>
+      <header style="background-color: #E61B72;padding: 10px; position: -webkit-sticky;" >
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn1" onclick="closeNav11()">&times;</a>
+          <a href="Fashion.html"><i class="fa fa-home"></i> Home</a><br/>
+          <a href="#search"><i class="fa fa-search"></i> Search</a><br/>
+          <a href="#"><i class="fa fa-envelope"></i> Message</a><br/> 
+          <a href="#"><i class="fa fa-globe"></i> Globe</a><br/>
+          <a href="#services"><i class="fa fa-wrench"></i> Services</a><br/>
+          <a href="#contact"><i class="fa fa-envelope"></i> Contact</a><br/>
+        </div>
+        
+            <div class="dropdown">
+              <a href="#"class="a"style="font-size:30px; cursor:pointer; font-family: Forte; color: white;"
+              onclick="openNav11()">&#9776;    Fashion</a>                 
+              <div class="dropdown-content">
+                    <p>
+                        Welcome to the fashion world.
+                    </p>
+                </div>
+            </div>
+
+      <script>
+      function openNav11() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav11() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+  
+      </script>
+     
+          
+     <button onclick="document.getElementById('id01').style.display='block'" id="login">Login</button>
+
+     <div id="id01" class="modal">
+          
+      <form class="modal-content animate" action="/action_page.php" method="post" style="background-color: white;">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="logo.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname" style="color: #E61B72; font-size: 20px;"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" id="uname" required style="border: 2px solid #e61b72; border-radius: 10px;">
+    
+          <label for="psw" style="color: #E61B72; font-size: 20px;" ><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required style="border: 2px solid #e61b72; border-radius: 10px;">
+          <label for="remember" style="color: #E61B72;">
+            <input type="checkbox" checked="checked" name="remember" id="remember" > Remember me
+          </label>  <br>              
+          <button type="submit" style="font-size: 25px; color:#E61B72; height: auto;  width: auto; margin-left: 47%;">Login</button>
+
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+      <script>
+      var modal = document.getElementById('id01');
+      
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      </script>
+    </header><br/>
+    <p style="font-size: 30px;">Suits:</p>
+       <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="suits1.jpg" style="width:50%; height: 30%;">
+          <div class="text">Milky Square Suit</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="suits2.jpg" style="width:50%; height: 30%;">
+          <div class="text">Dark Gray Square Suit</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="suits3.jpg" style="width:50%; height: 30%;">
+          <div class="text">Navy Suit</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="suits4.jpg" style="width:50%; height: 30%;">
+          <div class="text">Beige Suit</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="suits5.jpg" style="width:50%; height: 10%;">
+          <div class="text">Gray Square Suit</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+        <footer style="position:relative;top: 350px;">
+                
+          <div class="row">
+            <div class="column">
+              <b><p style="font-size: 30px;">About Fashion</p></b>
+              <a href="#">About Us</a><br/>
+              <a href="#">Fashion Store</a><br/>
+              <a href="#">Legal</a><br/>
+            </div>
+            <div class="column" style="padding-top: 20px;">
+              <b><p style="font-size: 30px;">Account</p></b>
+              <a href="#">My Account</a><br/>
+              <a href="#">Create Account</a><br/>
+            </div>
+          </div>
+          <hr color="white" width="80%">
+          <div class="row">
+            <div class="column2">
+              <a href="#" style="font-size: 50px; font-family: Forte;">Fashion</a>
+            </div>
+            <div class="column2" style="padding-top: 30px;">
+              <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" height="250%" width="5%"></a>
+                <a href="https://twitter.com" target="_blank"><img src="twitter.png" height="250%" width="5%"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="instagram.png" height="250%" width="5%"></a>
+            </div>
+          </div>
+          <br/>Copyright &copy;2020 <br/>
+          </footer>
+        </body>
+</html>
